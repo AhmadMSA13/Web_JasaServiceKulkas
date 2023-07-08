@@ -1,0 +1,640 @@
+body {
+    background-image: linear-gradient(90.1deg, rgba(84, 212, 228, 1) 0.2%, rgba(68, 36, 164, 1) 99.9%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+nav {
+    background-color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #FF9800;
+    color: #fff;
+}
+
+/* Menu-Mobile */
+
+.menu-moblie {
+    float: right;
+    display: none;
+}
+
+.menu-moblie:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba(68, 36, 164, .9);
+    transition: .3s;
+}
+
+.sidebar ul {
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.sidebar ul li {
+    display: flex;
+    transition: .3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #FF9800;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+}
+
+.sidebar ul li a {
+    text-align: left;
+    font-weight: bold;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* admin_dasboard*/
+
+.admin-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 90px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.admin-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-container form label {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.admin-container form .radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.admin-container form .radio-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.admin-container form .radio-group input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.admin-container form input[type="text"],
+.admin-container form input[type="password"],
+.admin-container form input[type="email"],
+.admin-container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.admin-container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-container form input[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.admin-container form button[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-container form button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.admin-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admin-container table th,
+.admin-container table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.admin-container table th {
+    background-color: #f2f2f2;
+}
+
+.admin-container table td:nth-child(3) {
+    text-align: center;
+}
+
+.admin-container table td form {
+    display: inline-block;
+}
+
+.admin-container table td input[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-container table td input[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.admin-container table td button[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-container table td button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.admin-container table td input[type="hidden"] {
+    display: none;
+}
+
+/* admin_users */
+
+.user-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.user-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.user-container form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user-container form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.user-container form button[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-container form button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.user-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-container table th,
+.user-container table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.user-container table th {
+    background-color: #f2f2f2;
+}
+
+.user-container table td:nth-child(1) {
+    text-align: center;
+}
+
+.user-container table td:nth-child(2) {
+    text-align: center;
+}
+
+.user-container table td:nth-child(3) {
+    text-align: center;
+}
+
+.user-container table td:nth-child(4) {
+    text-align: center;
+}
+
+.user-container table td:nth-child(5) {
+    text-align: center;
+}
+
+.user-container table td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user-container table td form {
+    display: inline-block;
+}
+
+.user-container table td input[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-container table td input[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.user-container table td button[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-container table td button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.user-container table td input[type="hidden"] {
+    display: none;
+}
+
+
+.btn-edit,
+.btn-delete{
+    margin: 0 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-edit:hover,
+.btn-delete:hover{
+    background-color: #F57C00;
+}
+
+/* admin_orders */
+
+.order-container {
+    max-width: 800px;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 20px;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #fff;
+}
+
+.order-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.order-container form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.order-container form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.order-container form button[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-container form button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.order-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-container table th,
+.order-container table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.order-container table th {
+    background-color: #f2f2f2;
+}
+
+.order-container table td:nth-child(3) {
+    text-align: center;
+}
+
+.order-container table td form {
+    display: inline-block;
+}
+
+.order-container table td input[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-container table td input[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.order-container table td button[type="submit"] {
+    background-color: #FF9800;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order-container table td button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.order-container table td input[type="hidden"] {
+    display: none;
+}
+
+/* edit_user */
+
+.edit-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.edit-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.edit-container form input[type="text"],
+.edit-container form input[type="email"],
+.edit-container form textarea {
+    width: 500px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.edit-container form button[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-container form button[type="submit"]:hover {
+    background-color: #F57C00;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .active {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .active:hover {
+    background-color: #F57C00;
+}
+
+.pagination .active.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .menu-moblie {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .admin-container table {
+        font-size: 12px;
+    }
+
+    .admin-container table th,
+    .admin-container table td {
+        padding: 5px;
+    }
+
+    .admin-container table td form {
+        display: block;
+    }
+
+    .admin-container table td input[type="submit"],
+    .admin-container table td button[type="submit"] {
+        padding: 3px 6px;
+    }
+
+    .user-container table {
+        font-size: 12px;
+    }
+
+    .user-container table th,
+    .user-container table td {
+        padding: 5px;
+    }
+
+    .user-container table td form {
+        display: block;
+    }
+
+    .user-container table td input[type="submit"],
+    .user-container table td button[type="submit"] {
+        padding: 3px 6px;
+    }
+
+    .order-container table {
+        font-size: 12px;
+    }
+
+    .order-container table th,
+    .order-container table td {
+        padding: 5px;
+    }
+
+    .order-container table td form {
+        display: block;
+    }
+
+    .order-container table td input[type="submit"],
+    .order-container table td button[type="submit"] {
+        padding: 3px 6px;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    color: black;
+}
